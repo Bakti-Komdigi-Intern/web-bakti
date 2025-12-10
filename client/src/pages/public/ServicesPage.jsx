@@ -27,10 +27,10 @@ const ServicesPage = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="flex-grow bg-gray-50 py-12">
+      <div className="flex-grow bg-gray-50 dark:bg-gray-800 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-4">Our Services</h1>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold dark:text-white text-center mb-4">Our Services</h1>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
             We provide comprehensive solutions to meet your digital infrastructure needs
           </p>
 
@@ -38,14 +38,14 @@ const ServicesPage = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow cursor-pointer"
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow cursor-pointer"
                 onClick={() => setSelectedService(service)}
               >
                 {service.icon && (
                   <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4 mx-auto" />
                 )}
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{service.title}</h3>
-                <p className="text-gray-600 mb-4 text-justify">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3 text-center">{service.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify">
                   {service.description.substring(0, 160)}...
                 </p>
                 {/* <button className="text-primary hover:underline font-medium">
