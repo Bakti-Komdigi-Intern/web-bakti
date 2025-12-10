@@ -22,7 +22,8 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img className='h-12 w-18' src="./src/assets/images/Logo_Bakti_Komdigi.jpg" alt="" />
+              <img className='h-12 w-18 block dark:hidden' src="./src/assets/images/Logo_Bakti_Komdigi.png" alt="" />
+              <img className='h-12 w-18 hidden dark:block' src="./src/assets/images/Logo_Bakti_Komdigi_Putih.png" alt="" />
               {/* <span className="text-2xl font-bold">Portal</span> */}
             </Link>
           </div>
