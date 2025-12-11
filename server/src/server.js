@@ -8,11 +8,10 @@ import { fileURLToPath } from 'url';
 import authRoutes from './routes/authRoutes.js';
 import newsRoutes from './routes/newsRoutes.js';
 import servicesRoutes from './routes/servicesRoutes.js';
-import profileRoutes from './routes/profileRoutes.js';
 
 // Import database and models
 import pool from './config/database.js';
-import { initProfile } from './models/profileModel.js';
+// import { initProfile } from './models/profileModel.js';
 
 dotenv.config();
 
@@ -31,13 +30,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Initialize profile data
-initProfile().catch(err => console.error('Init profile error:', err));
+// initProfile().catch(err => console.error('Init profile error:', err));
 
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/news', newsRoutes);
 app.use('/api/services', servicesRoutes);
-app.use('/api/profile', profileRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
