@@ -38,9 +38,9 @@ const HomePage = () => {
       <section className="bg-gradient-to-r from-primary to-tertiary dark:from-blue-900 dark:to-purple-900 text-white py-20 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Indonesia Terkoneksi, <br />
-              Semakin Digital <br />
+              <span className='text-secondary dark:text-tertiary'>Semakin Digital <br /></span>
               Semakin Maju
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ const HomePage = () => {
             </p>
             <Link
               to="/services"
-              className="inline-flex items-center bg-white text-primary dark:bg-gray-800 dark:text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              className="inline-flex items-center bg-white text-primary hover:text-white dark:bg-gray-800 dark:text-white px-8 py-3 rounded-lg font-semibold hover:bg-tertiary dark:hover:bg-gray-700 transition-colors"
             >
               {t('exploreServices')}
               <ArrowRight className="ml-2" size={20} />
