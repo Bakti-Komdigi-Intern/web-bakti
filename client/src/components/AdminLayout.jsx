@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { LogOut, LayoutDashboard, Newspaper, Briefcase, User } from 'lucide-react';
+import { LogOut, LayoutDashboard, Newspaper, Briefcase } from 'lucide-react';
 import { authService } from '../services/authService';
 import { useLanguage } from '../store/languageStore';
 import ThemeToggle from './ThemeToggle';
@@ -20,7 +20,6 @@ const AdminLayout = ({ children }) => {
     { icon: LayoutDashboard, label: t('dashboard'), path: '/admin/dashboard' },
     { icon: Newspaper, label: t('news'), path: '/admin/news' },
     { icon: Briefcase, label: t('services'), path: '/admin/services' },
-    { icon: User, label: t('profile'), path: '/admin/profile' },
   ];
 
   return (
