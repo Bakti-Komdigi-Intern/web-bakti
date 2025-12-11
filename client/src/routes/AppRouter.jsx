@@ -1,9 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 
 // Public pages
 import HomePage from '../pages/public/HomePage';
-import ProfilePage from '../pages/public/ProfilePage';
+import HistoryPage from '../pages/public/HistoryPage';
+import OrganizationPage from '../pages/public/OrganizationPage';
+import VisionMissionPage from '../pages/public/VisionMissionPage';
 import ServicesPage from '../pages/public/ServicesPage';
 import NewsPage from '../pages/public/NewsPage';
 import NewsDetailPage from '../pages/public/NewsDetailPage';
@@ -13,14 +15,19 @@ import LoginPage from '../pages/admin/LoginPage';
 import DashboardPage from '../pages/admin/DashboardPage';
 import NewsManagePage from '../pages/admin/NewsManagePage';
 import ServicesManagePage from '../pages/admin/ServicesManagePage';
-import ProfileManagePage from '../pages/admin/ProfileManagePage';
 
 const AppRouter = () => {
   return (
     <Routes>
       {/* Public Routes */}
       <Route path="/" element={<HomePage />} />
-      <Route path="/profile" element={<ProfilePage />} />
+
+      {/* Profile Routes */}
+      <Route path="/profile" element={<Navigate to="/profile/history" replace />} />
+      <Route path="/profile/history" element={<HistoryPage />} />
+      <Route path="/profile/organization" element={<OrganizationPage />} />
+      <Route path="/profile/vision-mission" element={<VisionMissionPage />} />
+      
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/news" element={<NewsPage />} />
       <Route path="/news/:slug" element={<NewsDetailPage />} />
@@ -48,14 +55,6 @@ const AppRouter = () => {
         element={
           <ProtectedRoute>
             <ServicesManagePage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/admin/profile"
-        element={
-          <ProtectedRoute>
-            <ProfileManagePage />
           </ProtectedRoute>
         }
       />
