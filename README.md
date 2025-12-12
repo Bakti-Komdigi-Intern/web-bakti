@@ -1,24 +1,3 @@
-## Tentang Project
-Project ini dibuat menggunakan React sebagai framework utama. Website ini dirancang dengan pendekatan komponen yang reusable, clean architecture, dan integrasi API yang efisien. Cocok untuk kebutuhan corporate website, landing page, dashboard, atau aplikasi web interaktif lainnya.
-
-## 📖Fitur Utama
-
-⚡ Responsive design untuk tampilan desktop & mobile
-🎨 Styling modern dengan Tailwind CSS / CSS Modules
-🧩 Komponen UI reusable
-🔌 Integrasi API menggunakan Axios / Fetch
-📁 Struktur project rapi & mudah dikembangkan
-🚀 Build ringan dan cepat
-🌙 Mode Gelap (Opsional jika digunakan)
-
-## 🛠️ Tech Stack
-
-1. React.js
-2. Vite / Create React App (tergantung project)
-3. Tailwind CSS / SCSS / CSS Modules
-4. React Router
-5. Axios
-6. ESLint + Prettier (opsional)
 
    # 🚀 React Website Project
 
@@ -186,5 +165,21 @@ Project ini menggunakan lisensi **MIT License**. Silakan gunakan dan modifikasi 
 
 ---
 
-Jika ingin menambahkan badge, screenshot, atau dokumentasi tambahan, tinggal beri tahu ya! 😊
+## **Lirik Lagu Kangen - Dewa 19**
+ 
+Kutrima suratmu `Tlah kubaca dan aku mengerti
+Betapa merindunya dirimu aKan hadirnya diriku
+Didalam hari-harimu Bersama lagi
 
+Kau tanyakan padaku Kapan aku akan kembali lagi
+Katamu kau tak kuasa Melawan gejolak didalam dada
+Yang membara menahan rasa Pertemuan kita nanti
+Saat bersama dirimu
+
+## Chorus:
+Semua kata rindumu
+Semakin membuatku `tak berdaya
+Menahan rasa ingin jumpa
+Percayalah padaku akupun rindu kamu
+Ku akan pulang Melepas semua kerinduan
+Yang terpendam.....
